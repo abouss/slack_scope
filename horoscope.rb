@@ -6,7 +6,7 @@ get '/' do
 end
 
 route :get, :post, '/' do
-	text = params[:text].sub("horoscope me ", "")
-	return {text: "SUP"}.to_json
+
+	{text: "SUP"}.to_json
 
 end
