@@ -7,11 +7,12 @@ HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius'}
 
 
 route :get, :post, '/' do
-	#print params
-	return {text: find_horoscope(HOROSCOPE_SIGNS[:params[:user_name].to_sym])}.to_json
+	name = params[:username]
+	return {text: find_horoscope(HOROSCOPE_SIGNS[:name])}.to_json
 
 end
 
-# name = "aboussayoud"
+
+# params = {username: 'aboussayoud'}
 
 # puts find_horoscope(HOROSCOPE_SIGNS[:name])
