@@ -8,6 +8,6 @@ require './HOROSCOPE_SIGNS'
 
 route :get, :post, '/' do
 	name = params[:user_name]
-	#return HOROSCOPE_SIGNS[name.to_sym]
+	
 	return {text: find_horoscope(HOROSCOPE_SIGNS[name.to_sym])}.to_json
 end
