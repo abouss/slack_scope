@@ -6,6 +6,6 @@ require 'sinatra/multi_route'
 
 route :get, :post, '/' do
 	#print params
-	return {text: params.keys}.to_json
+	return {text: params[:user_name]}.to_json
 
 end
