@@ -4,7 +4,7 @@ require 'sinatra/multi_route'
 from pars
 
 route :get, :post, '/' do
-
-	return {text: params}.to_json
+	print params
+	return {text: "SUP"}.to_json
 
 end
