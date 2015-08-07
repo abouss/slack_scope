@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
 require 'sinatra/multi_route'
-load 'parse_horoscope.rb'
+#load 'parse_horoscope.rb'
 
 
 route :get, :post, '/' do
