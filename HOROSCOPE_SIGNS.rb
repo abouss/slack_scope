@@ -1,1 +1,1 @@
-HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius', jchen: 'Scorpio'}
+HOROSCOPE_SIGNS = {aboussayoud: 'sagittarius', jchen: 'scorpio'}
