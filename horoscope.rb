@@ -10,9 +10,8 @@ route :get, :post, '/' do
 	name = params[:user_name]
 	horoscope = find_horoscope(HOROSCOPE_SIGNS[name.to_sym]).split("\n\n")
 	emoji = HOROSCOPE_EMOJIS[HOROSCOPE_SIGNS[name.to_sym].to_sym]
-	puts "debug"
-	puts emoji
-	horoscope = emoji + horoscope[0].tr("\n", "") + emoji+ "\n"  + horoscope[1]
+
+	horoscope = emoji[1] + emoji[0] + horoscope[0].tr("\n", "") + emoji[0] + emoji[1] + "\n"  + horoscope[1]
 
 	return {text: horoscope}.to_json
 end
