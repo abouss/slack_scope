@@ -1,4 +1,4 @@
-HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius', jchen: 'Scorpio'}
+HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius', jchen: 'Scorpio', sgriffis: 'Taurus', jbell: 'Scorpio'}
 HOROSCOPE_EMOJIS = {
 Aries: 'ram',
 Taurus:":cow2:",
