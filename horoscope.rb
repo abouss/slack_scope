@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'sinatra/multi_route'
 require 'json'
-require_relative 'parse_horoscope'
-require_relative 'HOROSCOPE_SIGNS'
+require './parse_horoscope'
+require './HOROSCOPE_SIGNS'
 
 # HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius'}
 
