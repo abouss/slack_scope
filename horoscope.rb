@@ -8,6 +8,6 @@ load 'HOROSCOPE_SIGNS'
 
 route :get, :post, '/' do
 	name = params[:user_name]
-	#return find_horoscope(HOROSCOPE_SIGNS[name.to_sym])
-	return {text: find_horoscope(HOROSCOPE_SIGNS[name.to_sym])}.to_json
+	return name
+	#return {text: find_horoscope(HOROSCOPE_SIGNS[name.to_sym])}.to_json
 end
