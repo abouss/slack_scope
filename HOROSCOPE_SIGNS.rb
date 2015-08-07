@@ -1,14 +1,15 @@
 HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius', jchen: 'Scorpio', sgriffis: 'Taurus', jbell: 'Scorpio'}
 HOROSCOPE_EMOJIS = {
-Aries: 'ram',
-Taurus:":cow2:",
-Gemini: ":two_men_holding_hands:",
-Cancer: ":crab:",
-Leo: ":cat2:", Virgo: ":princess:",
-Libra:":hourglass_flowing_sand:",
-Scorpio:":dragon:",
-Sagittarius:":arrow_upper_right:",
-Capricorn:":goat:",
-Aquarius:":swimmer:",
-Pisces:":tropical_fish:"
+Aries: ['ram', ":aries:"],
+Taurus:[":cow2:",":taurus:"],
+Gemini: [":two_men_holding_hands:",":gemini:"],
+Cancer: [":crab:",":cancer:"],
+Leo: [":cat2:", ":leo:"],
+Virgo: [":princess:",":virgo:"],
+Libra:[":hourglass_flowing_sand:",":libra:"],
+Scorpio:[":dragon:",":scorpius:"],
+Sagittarius:[":arrow_upper_right:",":sagittarius:"],
+Capricorn:[":goat:",":capricorn:"],
+Aquarius:[":swimmer:", ":aquarius:"],
+Pisces:[":tropical_fish:",":pisces:"]
 }
