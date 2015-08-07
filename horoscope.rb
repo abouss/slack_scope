@@ -10,9 +10,9 @@ route :get, :post, '/' do
 	sign_text = params[:text].sub("pp horoscope ", "")
 	
 	if sign_text != "me"
-		return sign_text
 		sign_text = sign_text.capitalize
 		horoscope = find_horoscope(sign_text).split("\n\n")
+		return horoscope
 		emoji = HOROSCOPE_EMOJIS[sign_text.to_sym]
 		horoscope = emoji[1] +emoji[0] + horoscope[0].tr("\n", "") + emoji[0] + emoji[1]+ "\n"  + horoscope[1]
 	else
