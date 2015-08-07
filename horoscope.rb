@@ -7,6 +7,7 @@ require './HOROSCOPE_SIGNS'
 # HOROSCOPE_SIGNS = {aboussayoud: 'Sagittarius'}
 
 route :get, :post, '/' do
+
 	sign_text = params[:text].sub("pp horoscope ", "")
 	if text_sign != "me"
 		horoscope = find_horoscope(sign_text).split("\n\n")
