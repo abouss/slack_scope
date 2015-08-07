@@ -9,9 +9,10 @@ require './HOROSCOPE_SIGNS'
 route :get, :post, '/' do
 
 	sign_text = params[:text].sub("pp horoscope ", "")
-	if text_sign != "me"
+	
+	if sign_text != "me"
 		horoscope = find_horoscope(sign_text).split("\n\n")
-		emoji = HOROSCOPE_EMOJIS[text_sign.to_sym]
+		emoji = HOROSCOPE_EMOJIS[sign_text.to_sym]
 		horoscope = emoji[0] + horoscope[0].tr("\n", "") + emoji[2]+ "\n"  + horoscope[1]
 	else
 		name = params[:user_name]
@@ -19,5 +20,6 @@ route :get, :post, '/' do
 		emoji = HOROSCOPE_EMOJIS[HOROSCOPE_SIGNS[name.to_sym].to_sym]
 		horoscope = emoji[0] + horoscope[0].tr("\n", "") + emoji[2]+ "\n"  + horoscope[1]
 	end
+
 	return {text: horoscope}.to_json
 end
